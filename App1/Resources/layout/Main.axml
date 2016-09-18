@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="100dp" 
+        android:minHeight="100dp"
+        android:id="@+id/webView1" 
+      />
+
+
+  <ImageView
+  android:layout_width="wrap_content"
+  android:background="@drawable/gradient"
+  android:layout_height="1dp"
+  android:minHeight="1dp"
+  android:layout_margin="10dp"
+  android:layout_below="@+id/webView1"
+  android:id="@+id/horizLine"
+  ></ImageView>
+
+  <WebView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/horizLine"
+    android:id="@+id/webView2"
+    android:minHeight="10dp"
+    android:layout_margin="0dp"
+    android:padding="0dp"    
+      />
+
+  <WebView
+    
+   android:layout_width="match_parent"
+   android:layout_height="fill_parent"
+   android:layout_weight="1"
+   android:layout_below="@+id/webView2"
+   android:id="@+id/webView3"
+   android:layout_margin="0dp"
+   android:padding="0dp"
+      />
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignRight="@+id/webView3"
+      android:layout_alignBottom="@+id/webView3"
+      android:text="Quit" />
+  <TextView
+      android:text="Velocity data"      
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/webView3"
+      android:layout_alignBottom="@+id/webView3"
+      android:id="@+id/velocity_text_view" />
+</RelativeLayout>
+
